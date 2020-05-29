@@ -15,3 +15,9 @@ class Cat:
             return '*snore*'
         else:
             return 'I wanna play!'
+
+    def attack(self):
+        if not self.sleepy:
+            return 'HISS'
+        else:
+            return self.sleep()
