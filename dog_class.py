@@ -1,4 +1,2 @@
-
-
-class Dog():
+class Dog:
     pass

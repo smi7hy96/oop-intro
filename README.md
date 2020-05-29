@@ -1,10 +1,17 @@
 # INTRO TO OOP
 
-What is OOP
+## What is OOP
 
-Why
+## Why
 
-How to
+## How to
 
+## Class
+
+## Methods
+
+## Syntax
+
+## Convention
 
 ## 4 Pillars

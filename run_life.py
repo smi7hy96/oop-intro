@@ -3,3 +3,7 @@
 
 from dog_class import *
 
+german_shepherd = Dog()
+
+print(german_shepherd)
+print(type(german_shepherd))
