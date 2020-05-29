@@ -3,11 +3,11 @@ from cat_class import Cat
 
 
 class CatTest(unittest.TestCase):
-    def SetUp(self):
+    def setUp(self):
         self.cat = Cat('Aggressive', 'Ginger', 'Mufasa', False, 'Tabby')
 
     def test_eat(self):
-        self.assertEqual(self.cat.eat('tuna'), 'ugh, tuna')
+        self.assertEqual(self.cat.eat('tuna'), 'ugh, Tuna')
 
     def test_sleep(self):
         self.assertEqual((self.cat.sleep()), '*snore*')

@@ -7,4 +7,5 @@ class Cat:
         self.sleepy = sleepy
         self.breed = breed
 
-
+    def eat(self, food):
+        return f'ugh, {food.title()}'
