@@ -10,6 +10,8 @@ class CatTest(unittest.TestCase):
         self.assertEqual(self.cat.eat('tuna'), 'ugh, Tuna')
 
     def test_sleep(self):
+        self.assertEqual(self.cat.sleep(), 'I wanna play!')
+        self.cat.sleepy = True
         self.assertEqual((self.cat.sleep()), '*snore*')
 
     def test_attack(self):

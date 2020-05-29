@@ -9,3 +9,9 @@ class Cat:
 
     def eat(self, food):
         return f'ugh, {food.title()}'
+
+    def sleep(self):
+        if self.sleepy:
+            return '*snore*'
+        else:
+            return 'I wanna play!'
