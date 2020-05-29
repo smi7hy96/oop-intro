@@ -17,6 +17,8 @@ class CatTest(unittest.TestCase):
     def test_attack(self):
         self.assertEqual(self.cat.attack(), 'HISS')
         self.cat.sleepy = True
+        self.assertEqual(self.cat.attack(), 'HISS')
+        self.cat.behaviour = 'Not Aggressive'
         self.assertEqual(self.cat.attack(), '*snore*')
 
     def test_chase(self):
