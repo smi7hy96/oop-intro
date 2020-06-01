@@ -4,11 +4,8 @@ from animal_class import *
 class Cat(Animal):
 
     def __init__(self, behaviour, colour, name, sleepy, breed):
+        super().__init__(colour, name, breed, sleepy)
         self.behaviour = behaviour.title()
-        self.colour = colour
-        self.name = name
-        self.breed = breed
-        self.sleepy = sleepy
 
     def attack(self):
         if not self.sleepy or self.behaviour == "Aggressive":
