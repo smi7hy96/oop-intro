@@ -1,11 +1,11 @@
 # Abstract and create the Class Dog
+from animal_class import *
 
 
-class Dog:
+class Dog(Animal):
 
-    def __init__(self, name, breed, size):
-        self.name = name
-        self.breed = breed
+    def __init__(self, colour, name, breed, sleepy, age, size):
+        super().__init__(colour, name, breed, sleepy, age)
         self.size = size
 
     def bark(self):
