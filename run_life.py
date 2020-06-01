@@ -4,5 +4,5 @@
 from dog_class import *
 from cat_class import *
 
-german_shepherd1 = Dog('Jack', 'German Shepherd', 'Big')
-tabby = Cat('aggressive', 'black', 'midnight', True, 'Bengal')
+tabby = Cat('timid', 'black', 'midnight', False, 'Bengal', 2)
+print(tabby.attack())
