@@ -4,7 +4,7 @@ from animal_class import Animal
 
 class AnimalTest(unittest.TestCase):
     def setUp(self):
-        self.animal = Animal('Ginger', 'Mufasa', 'Tabby', False)
+        self.animal = Animal('Ginger', 'Mufasa', 'Tabby', False, 5)
 
     def test_eat(self):
         self.assertEqual(self.animal.eat('tuna'), 'ugh, Tuna')
@@ -13,6 +13,9 @@ class AnimalTest(unittest.TestCase):
         self.assertEqual(self.animal.sleep(), 'I wanna play!')
         self.animal.sleepy = True
         self.assertEqual((self.animal.sleep()), '*snore*')
+
+    def test_happy_birthday(self):
+        self.assertEqual(self.animal.happy_birthday(), "Happy Birthday Mufasa!! You are 6!")
 
 
 if __name__ == '__main__':
