@@ -7,10 +7,10 @@ class AnimalTest(unittest.TestCase):
         self.animal = Animal('Ginger', 'Mufasa', 'Tabby', False, 5)
 
     def test_eat(self):
-        self.assertEqual(self.animal.eat('tuna'), 'ugh, Tuna')
+        self.assertEqual(self.animal.eat('tuna'), 'OOOH, Tuna')
 
     def test_sleep(self):
-        self.assertEqual(self.animal.sleep(), 'I wanna play!')
+        self.assertEqual(self.animal.sleep(), 'No! I wanna play!')
         self.animal.sleepy = True
         self.assertEqual((self.animal.sleep()), '*snore*')
 

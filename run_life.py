@@ -5,4 +5,4 @@ from dog_class import *
 from cat_class import *
 
 tabby = Cat('timid', 'black', 'midnight', False, 'Bengal', 2)
-print(tabby.attack())
+print(tabby.happy_birthday())
