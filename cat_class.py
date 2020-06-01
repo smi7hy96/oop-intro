@@ -1,21 +1,14 @@
-class Cat:
+from animal_class import *
+
+
+class Cat(Animal):
 
     def __init__(self, behaviour, colour, name, sleepy, breed):
         self.behaviour = behaviour.title()
         self.colour = colour
         self.name = name
-        self.sleepy = sleepy
         self.breed = breed
-
-    def eat(self, food):
-        return f'ugh, {food.title()}'
-
-    def sleep(self):
-        if self.sleepy:
-            self.sleepy = True
-            return '*snore*'
-        else:
-            return 'I wanna play!'
+        self.sleepy = sleepy
 
     def attack(self):
         if not self.sleepy or self.behaviour == "Aggressive":

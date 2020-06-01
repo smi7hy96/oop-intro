@@ -6,14 +6,6 @@ class CatTest(unittest.TestCase):
     def setUp(self):
         self.cat = Cat('Aggressive', 'Ginger', 'Mufasa', False, 'Tabby')
 
-    def test_eat(self):
-        self.assertEqual(self.cat.eat('tuna'), 'ugh, Tuna')
-
-    def test_sleep(self):
-        self.assertEqual(self.cat.sleep(), 'I wanna play!')
-        self.cat.sleepy = True
-        self.assertEqual((self.cat.sleep()), '*snore*')
-
     def test_attack(self):
         self.assertEqual(self.cat.attack(), 'HISS')
         self.cat.sleepy = True

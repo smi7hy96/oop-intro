@@ -6,4 +6,3 @@ from cat_class import *
 
 german_shepherd1 = Dog('Jack', 'German Shepherd', 'Big')
 tabby = Cat('aggressive', 'black', 'midnight', True, 'Bengal')
-
