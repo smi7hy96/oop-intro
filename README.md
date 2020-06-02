@@ -62,3 +62,8 @@ Naming convention of the class file follows the same as any other. However when 
                 self.behaviour = behaviour.title()   
         ``` 
 
+## Private Methods
+- In python there are no real private methods or attributes. Instead a name mangling algorithm is used to protect them from name clashes.
+- Double underscores (__private()) are used to initiate the mangling algorithm and therefore if a child class inherits the method they can have the own __private() without interfering with the class of the same name in the Parent class.
+- Therefore, they have their own namespace
+- Accessing both methods is still possible, using _Parent__private or _Child__private.
